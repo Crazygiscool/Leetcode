@@ -3,17 +3,16 @@ target = 9
 
 class Solution:
     def twoSum(self, nums, target):
-        seen: dict[int, int] = {}
+        seen = {} # no need for typing for dict, just the {} works
 
-        _nums = nums # definition so not looked up at diff mem loc. optimization
         _seen = seen # definition so not looked up at diff mem loc. optimization
-        for i,num in enumerate(_nums):
+        for i,num in enumerate(nums):
             complement = target - num
 
-            if complement in seen:
-                return[seen[complement], i]
+            if complement in _seen:
+                return[_seen[complement], i]
 
-            seen[num] = i
+            _seen[num] = i
         return []
 
 sol = Solution()

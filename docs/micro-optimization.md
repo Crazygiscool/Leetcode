@@ -56,6 +56,8 @@ for i in range(len(nums)):
     ...
 ```
 
+For leet code purposes, its usually faster and cleaner to use enumerate
+
 ### 4. Short Local Names
 Shorter names don't change algorithmic speed, but they reduce bytecode length slightly and keep everything local:
 
