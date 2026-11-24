@@ -11,7 +11,7 @@ class Solution:
             if complement in seen:
                 return[seen[complement], i]
 
-        seen[num] = i
+            seen[num] = i
         return []
 
 sol = Solution()
